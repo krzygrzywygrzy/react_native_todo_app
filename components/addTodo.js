@@ -15,7 +15,9 @@ export default function AddTodo({ submit }) {
         style={styles.input}
       />
       <Button
-        onPress={() => console.log(text)}
+        onPress={() => {
+          submit(text);
+        }}
         title="add todo"
         color="coral"
       />
